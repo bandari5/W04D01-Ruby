@@ -11,6 +11,7 @@
 ```
 ```text
 Your answer.
+8
 ```
 
 ```rb
@@ -18,6 +19,7 @@ Your answer.
 ```
 ```text
 Your answer.
+error
 ```
 
 ```rb
@@ -25,6 +27,7 @@ Your answer.
 ```
 ```text
 Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
@@ -32,6 +35,7 @@ Your answer.
 ```
 ```text
 Your answer.
+error
 ```
 
 ```rb
@@ -40,6 +44,8 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
+my_favorite_number = 13.to_s
+puts "My favorite number is: " + my_favorite_number
 ```
 
 ```rb
@@ -48,6 +54,8 @@ puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
 Your answer.
+my_favorite_number = 13
+puts "My favorite number is: #{my_favorite_number}"
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +63,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[x ] false
 [ ] 0
 [ ] ""
-[ ] null
+[] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[x] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -79,6 +87,7 @@ end
 ```
 ```text
 Your answer.
+My name is: 
 ```
 
 ```rb
@@ -89,6 +98,7 @@ end
 ```
 ```text
 Your answer.
+Empty 
 ```
 
 ```rb
@@ -139,5 +149,15 @@ Your output should look something like this...
     # Your code goes in here.
   end
   ```
+  (1..100).each do |number|
+  if number % 3 == 0 and number % 5 == 0
+    puts "FizzBuzz"
+  elsif number % 5 == 0
+    puts "Buzz"
+  elsif number % 3 == 0
+      puts "Fizz"
+    end
+  end
+
 
 </details>
